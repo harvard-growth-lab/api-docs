@@ -4,7 +4,6 @@ The Growth Lab's Atlas of Economic Complexity provides a GraphQL API for queryin
 
 **Base URL:** `https://atlas.hks.harvard.edu/api/graphql`
 
-
 ## Getting Started
 
 The Atlas API uses GraphQL, which allows you to request exactly the data you need. All queries are sent via POST requests to the GraphQL endpoint. The API is publicly accessible and does not require authentication.
@@ -49,6 +48,8 @@ Locations are available in two different levels of aggregation in specific endpo
 Each location is identified with an internally-designated, numerical identification code. Wherever possible, this identifier has been designed to correspond to [a location's M49 code as desginated by the UN](https://unstats.un.org/unsd/methodology/m49/). Like product IDs, these can be used between endpoints to join data in queries.
 
 ## Best Practices and Restrictions
+
+The Atlas API is specifically designed to support functionality for the Atlas of Economic Complexity. Public access is provided as a courtesy to users who may find it useful, but it is always possible that specific endpoints or data values may change suddenly and without warning. The Atlas API is best used to access data for stand-alone economic analysis, not to support other software applications.
 
 The Atlas API currently enforces a **rate limit of 120 requests per minute**. We reserve the right to monitor usage of the Atlas API for abusive or potentially malicious behavior and further restrict or block access to specific users. Please be respectful of this public good and the associated work to maintain it as open access for all users.
 
